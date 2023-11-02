@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃 </title>
+    <style>
+
+        body { 
+            background: #222;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        #container {
+
+            width : 900px;
+            margin: 0 auto;
+            height: 100%;
+            background: #fff;
+        
+        }
+
+        #left { 
+
+            width:  300px;
+            background: #ddd;
+            height: 100%;
+            float: left;
+    
+        }
+
+        img { 
+            margin: 25px;
+            margin-top: 50px;
+            width:250px;
+            height: 200px;   
+        }
+
+        .ineerleft { 
+            margin: 20px 50px 0 50px;
+            width : 200px;
+            padding-top: 20px;
+            background: skyblue;
+        }
+
+        h1 {
+            font-variant: small-caps ;
+            margin-left: 30px;
+        }
+
+        .cls001 {
+
+            font-size: 14px;
+            margin-left: 30px;
+            color: #4d4a4a;
+            line-height: 1.7;
+        }
+
+        .cls002 {
+
+            font-size: 14px;
+            margin-left: 30px;
+            margin-top: 120px;
+            line-height: 2.8;
+        }
+
+           h2.clsoo3 { 
+
+            font-variant: normal;
+            margin: 0;
+        }
+
+         .cls004 { 
+            font-size: 15px;
+            line-height: 2.0;
+            margin-left: 20px;
+            margin-bottom: 30px;
+
+         }
+        h3{
+            margin-left: 30px;
+        }
+
+        #right {
+
+            width : 600px;
+            height: 100%;
+            float : right;
+            padding: 70px;
+            box-sizing: border-box;
+        }
+
+        hr { 
+            border-width: 1px;
+            border-style: dotted ;
+            margin-left: -50px;
+            width:500px;
+        }
+
+        .cls005 { 
+
+            margin-top: 30px;
+        }
+      
+        li { 
+            font-size: 14px;
+            line-height: 2.0;
+        }
+        
+        .cls006{
+            /* border: 1px solid black; */
+            margin-left: -40px;
+            margin-bottom: 30px;
+        }
+
+        .cls007 { 
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .cls009 { 
+
+            border: 1px solid gray;
+            border-collapse: collapse;
+            margin-left: 10px;
+        }
+
+        th, td {
+
+            border: 1px solid black; 
+            padding : 2px;
+            text-align : center;
+            height: 20px;
+        }
+        th {
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="left">
+            <div class="innerleft">
+            <img src="사과.jpg" alt="사과"></div>
+            <h1>Kyunghee Ko</h1>
+            <p class="cls001">오늘은 남은 인생이 시작되는 <br> 첫째날</p>
+            <p class="cls002"> Jeju, Korea <br>
+                funcom@gmail.com
+            </p>
+            <h3>SNS</h3>
+        </div>
+        <div id="right">
+            <h2 class="cls003">Who am I?</h2>
+            <p class="cls004">프런트엔드 <mark>웹 기술</mark>에 관심이 많습니다.<br>
+            현재 제주의 한 시골 마을에서 코딩중입니다. </p>
+            <hr>
+            <h2 class="cls005">Experience</h2>
+            <ul class="cls006">
+                <li>프론트엔드 개발
+                    <ul>
+                        <li>업무내용 업무내용</li>
+                        <li>업무내용</li>
+                        <li>업무내용</li>
+                    </ul>
+                </li>
+                <li> 웹 디자인 
+                    <ul>
+                        <li>업무내용</li>
+                        <li>업무내용</li>
+                    </ul>
+                </li>
+
+            </ul>
+            <hr>
+            <h2 class="cls007">Skill</h2>
+
+
+
+            <hr>
+            <h2 class="cls008">Education</h2>
+            <table class="cls009">
+            <caption>학력 사항</caption>
+            <thead>
+            <tr>
+                <th>출신학교</th>
+                <th>전공</th>
+                <th>기간</th>
+                <th>구분</th>
+            </tr>
+             </thead>
+             <tbody>
+            <tr>
+                <td>ㅁㅁ대학교</td>
+                <td>컴퓨터공학</td>
+                <td>2004.3 ~ 2008.2</td>
+                <td>졸업</td>
+            </tr>
+            <tr>
+                <td>ㅇㅇㅇ고등학교</td>
+                <td>-</td>
+                <td>2001.3 ~ 2004.2</td>
+                <td>졸업</td>
+            </tr>
+         </tbody>
+        </table>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
+
+<!-- 절대픽셀 width가 존재해야  margin 0 auto가 작동한다 -->
